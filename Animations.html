@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+
+            /* animation-name: moveRight;
+            animation-duration: 3s;
+            animation-timing-function:ease-in-out;
+            animation-delay: 0s;
+
+            animation-iteration-count: 5;
+            animation-direction: alternate; */
+
+            animation: moveRight 3s ease-in 1s infinite normal;        
+        }
+
+
+        @keyframes moveRight {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(200px);
+            }
+        }
+
+        @keyframes moveRight {
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(400px);
+            }
+
+            100%{
+                transform: translateX(200px);
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+         box
+    </div>
+</body>
+</html>
