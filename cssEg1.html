@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        a:hover{
+            color: red;
+        }
+
+        .test:focus{
+            background-color: aquamarine;
+        }
+
+        h1::before{
+            content: "**";
+        }
+
+        h2::after{
+            content: "##";
+            color: blue;
+        }
+
+        p{
+            color: red;
+        }
+
+        p::first-letter{
+            font-size: 200%;
+        }
+        p::first-line{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .parent2{
+            position: relative;
+            border: 2px solid green
+        }
+        .parent1{
+
+            border: 2px solid red;
+        }
+
+
+
+        .test1{
+            margin-top: 200px;
+            border: 2px solid black;
+            position: absolute;
+            top:20px;
+            left: 50px;
+        
+        }
+
+        .test2{
+            position: fixed;
+        }
+
+        .test3{
+            position: sticky;
+            top:0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>hii</h1>
+    <h2 class="test3">hello-----</h2>
+    <h2>hello</h2>
+    <div class="parent2">
+        <h1>
+            hello
+        </h1>
+        <div class ="parent1">
+
+            <h1 class="test1">hii  232</h1>
+
+        </div>
+
+
+    </div>
+    <h2 class="test2">hello</h2>
+    <h1>hii</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum esse dicta nihil deleniti quo, vit</p>
+    <button>click</button>
+    <a href="#"> link</a>
+    <input type="text" name="text" id="text" class="test">
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            color: green !important;
+            font-size: x-large;
+        }
+
+        .class1{
+            color: blue;
+        }
+
+        #myid1{
+            color: white;
+            background-color: brown;
+        }
+
+       h2{
+            font-size: 5vw;
+            color: red !important;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid ;
+
+
+        }
+
+
+        span:hover{
+            background-color: aqua;
+        }
+
+        span::after{
+            font-size: 200%;
+            color: brown;
+        }
+
+        /* .class12{
+            display: flex; 
+            flex-direction: column;
+            gap: 20%;
+            border: 2px solid;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .class12{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+
+        }
+
+        span{
+            /* position: absolute; */
+            /* position: relative; */
+            position: fixed;
+            background-color: green;
+            z-index: 10;
+            /* top:0%; */
+            left: 50%;
+            right: 10%;
+            /* bottom: ; */
+        }
+        h3{
+
+             /* position: absolute; */
+            /* position: relative; */
+            position: fixed;
+            z-index: 1;
+            background-color: red;
+            /* top:0%; */
+            left: 50%;
+            right: 10%;
+            /* bottom: ; */
+        }
+
+        div{
+
+            border: 5px solid ;
+
+        }
+
+
+        
+    </style>
+  
+</head>
+<body>
+
+    <h1 style="color: red; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: aqua;">
+        welcome back
+    </h1>
+    <p class="class1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti magnam iusto obcaecati maxime sunt quia, labore vero quibusdam est dignissimos aliquid quo. Eius accusantium vitae fuga, excepturi est iste.
+        
+        
+        <p id="myid1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia suscipit voluptas similique molestias expedita in, laborum est beatae, non itaque quod magnam, recusandae ipsum minus rerum nisi exercitationem veniam consectetur?
+            <h2>h2 tag</h2>
+            
+        </p>
+       
+        <h5> h5 tag</h5>
+    
+    </p>
+
+    <div class="cl">
+        <span>hiii</span>
+        <h3> csss</h3>
+        <h5>h2 tag</h5>
+        <h4>h4 tag</h4>
+    </div>
+
+
+
+    
+</body>
+</html>

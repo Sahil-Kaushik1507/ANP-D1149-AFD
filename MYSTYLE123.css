@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+                color: aqua;
+                font-size: large;
+            }
+
+            p{
+                background-color: brown;
+            }
+
+            .abc{
+                color: blue;
+            }
+
+            #xyz{
+                color: red;
+            }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* 1. Universal Selector */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 2. Type Selector */
+    h1 {
+      color: darkblue;
+    }
+
+    /* 3. Class Selector */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* 4. ID Selector */
+    #main-heading {
+      font-size: 32px;
+      text-decoration: underline;
+    }
+
+    /* 5. Group Selector */
+    h1, p {
+      margin-bottom: 10px;
+      /* color:red  */
+    }
+
+    /* 6. Descendant Selector */
+    div p {
+      color: green;
+    }
+
+    /* 7. Child Selector */
+    div > p {
+      font-style: italic;
+    }
+
+    /* 8. Adjacent Sibling Selector */
+    h1 + p {
+      color: red;
+      background-color: blue;
+    }
+
+    /* 9. General Sibling Selector */
+    h1 ~ h3 {
+      color: teal;
+    }
+
+    /* 10. Attribute Selector */
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    /* 11. Pseudo-class */
+    a:hover {
+      color: orange;
+    }
+
+    p:first-child {
+      font-weight: bold;
+    }
+
+    li:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    /* 12. Pseudo-element */
+    p::before {
+      content: "💬 ";
+    }
+
+    p::after {
+      content: " ✅";
+    }
+
+    /* 13. Negation */
+    p:not(.highlight) {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-heading">CSS Selectors Demo</h1>
+
+  <p class="highlight">This is a highlighted paragraph.</p>
+  <p>This paragraph is not highlighted.</p>
+  <h3>Another heading after h1</h3>
+
+  <div>
+    <p>Child paragraph inside div</p>
+    <section>
+      <p>Descendant paragraph inside section in div</p>
+    </section>
+  </div>
+
+  <input type="text" placeholder="Text input" />
+  <input type="password" placeholder="Password input" />
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+
+  <a href="#">Hover over this link</a>
+
+</body>
+</html>
