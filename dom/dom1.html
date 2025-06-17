@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-1</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="heading" id="head"> hello <span style="display: none;"> user!</span></h1>
+        <h1 class="heading" id="head2"> hello2 <span style="display: none;"> user!</span></h1>
+        <h1 class="heading" id="head3"> hello3 <span style="display: none;"> user!</span></h1>
+        <p class="dis" height="20px" style="border: 2px solid;">Lorem ipsum dolor sit amet.</p>
+
+
+    </div>
+</body>
+<script>
+
+    const newP = document.createElement('p');
+    const newP1 = document.createElement('p');
+    newP.innerText="Hello World";
+    newP.id="newP"
+    newP.className="newPClass"
+    newP.setAttribute('height','50px')
+    newP.setAttribute('style','border: 2px solid;')
+
+    const parent1 = document.querySelector('.main')
+
+    parent1.appendChild(newP1);
+    parent1.appendChild(newP);
+    console.log(newP);
+
+    const h1= document.getElementById("head3");
+    parent1.insertBefore(newP,h1);
+
+
+     const h3= document.getElementById("head2");
+
+    //  h3.remove();
+
+    parent1.removeChild(h3);
+
+
+
+
+
+
+</script>
+</html>

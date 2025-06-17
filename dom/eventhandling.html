@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handling</title>
+</head>
+<body>
+
+    <div class=" mybtns">
+        <button onclick="alert('hello1')"> hello1</button>
+        <button id="btn2"> hello2</button>
+        <button id="btn3"> hello3</button>
+        <!-- <button id="btn3"> hello3</button> -->
+        <button id="btn4"> hello4</button>
+        <button> hello5</button>
+
+        <a href="https://www.google.com/" target="_blank" id="google">  Google</a>
+    </div>
+    
+</body>
+
+<script>
+
+        // const btn2= document.getElementById("btn2");
+        // btn2.onclick=function(){
+        //     alert("heloo 2");
+        // }
+
+        //  const btn3= document.getElementById("btn3");
+
+        //  btn3.addEventListener('click',(e)=>{
+        //         console.log(e);
+        //         console.log(e.target.nodeName)
+        //         alert("hello 3")
+        //  },true)
+
+
+           const btn4= document.getElementById("btn4");
+
+        btn4.addEventListener("click",function(){
+            console.log("clicked child")
+         })
+
+
+        const mybtns = document.querySelector('.mybtns')
+        mybtns.addEventListener('click',function(){
+            console.log("clicked parent")
+        },{once:true})
+
+
+        const google = document.getElementById('google');
+
+        google.addEventListener('click', function(e){
+            console.log(e);
+            e.preventDefault();
+            alert("hii google")
+        })
+
+         
+     
+
+
+
+</script>
+
+
+</html>
