@@ -32,7 +32,7 @@ console.log(myobj.py);
 
 // console.log(myobj[keys[0]])
 
-console.log(Object.keys(myobj)[3]);
+console.log(Object.values(myobj));
 
 
 

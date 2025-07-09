@@ -3,7 +3,10 @@ const fs = require('fs')
 const express= require('express')
 const path = require('path')
 
-const app = express();
+const app = express()
+
+app.use(express.urlencoded({extended:true}))
+
 
 app.get('/',(req,res)=>{
 
@@ -12,8 +15,6 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'public','home.html'))
 })
 
-
-
 app.get('/about',(req,res)=>res.sendFile(path.join(__dirname,'public','about.html')))
 
 app.get('/contact',(req,res)=>res.sendFile(path.join(__dirname,'public','contact.html')))
@@ -21,6 +22,11 @@ app.get('/contact',(req,res)=>res.sendFile(path.join(__dirname,'public','contact
 // app.get('/contact',(req,res)=>res.send("My contact Details are...."))
 
 app.post('/contact',(req,res)=>{
+
+    console.log(req.body)
+
+    res.send("Form Data Submitted")
+    
 
 })
 
